@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    padding-left: 15px;
+}
+
+.aboutus {
+    background-color: rgb(188, 171, 121);
+
+}
+
+.myevent {
+    background-color: rgb(188, 171, 121);
+
+}
+
+body {
+    background-color: tomato;
+}

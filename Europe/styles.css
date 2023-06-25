@@ -1,0 +1,97 @@
+/* styles.css is out stylesheet and gives us all the rules for how our site will look*/
+
+/* To redifne an HTML tag, we state the tag and give new rules isnide {} */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family:vogue ;
+    src: url(vogue.ttf);
+}
+
+@font-face {
+    font-family: Heading;
+    src: url(Heading.ttf);
+}
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+}
+
+body {
+    background-color: rgb(188, 171, 121);
+    font-family: arial, sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 20px 10px 20px 10px;
+}
+h1 {
+    text-align: center;
+    font-family: Heading, 'Times New Roman', Times, serif;
+    color: rgb(41, 120, 160);
+    margin-bottom: 20px;
+    font-size: 60pt;
+}
+ul {
+    margin-left: 20px;
+}
+
+h2 {
+    font-family: vogue, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+p {
+    margin-bottom: 5px;
+}
+a:link {
+    color: rgb(234, 87, 22);
+    text-decoration: none;
+}
+a:visited {color:rgb(41,120,160)
+
+}
+h3 {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.ukcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+}
+
+.card {
+    margin: 10px;
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.heading {
+    text-align: center;
+}
+
+
+@media only screen and (max-width:800px) {
+    .container {
+        grid-template-columns: 1fr;    
+    }
+    .intro {
+        border: 8px white solid;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+/* Meida query is used to change the layout when the screen changes size *
+
+
+
+
+
+
